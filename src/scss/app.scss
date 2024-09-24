@@ -1,0 +1,40 @@
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/variables";
+
+// Third-party Libraries
+// @import "~bootstrap/scss/bootstrap"; // Bootstrap
+
+// Components
+@import "components/bg";
+@import "components/boton";
+@import "components/titulo";
+@import "components/container";
+
+// Layout
+@import "layout/header";
+// @import "layout/contenido-principal";
+@import "layout/navbar";
+@import "layout/wrapper";
+@import "layout/footer";
+
+// Pages
+@import "pages/contactos";
+@import "pages/nuestro-servicio";
+@import "pages/sobre-nosotros";
+@import "pages/como-ayudar";
+@import "pages/porque-elegirnos";
+@import "pages/unete-comunidad";
+@import "pages/testimonio-resenas";
+@import "pages/propulsado-proyecto";
+@import "pages/mirar-video";
+
+// Utilities
+@import "utilities/variables";
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/helpers";
+
+// Additional Styles and Hacks
+@import "hacks/hack";

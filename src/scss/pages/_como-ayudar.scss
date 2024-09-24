@@ -1,0 +1,83 @@
+#como-ayudar {
+  background: $primary;
+  padding: 5rem 0;
+
+  .titulo {
+    h2 {
+      color: #fff;
+    }
+  }
+
+  .ayuda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 auto;
+
+    .ayuda-cartas {
+      flex: 1 1 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #fff;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+      .ful-icon {
+        width: 100px;
+        height: 100px;
+        background: $secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        i {
+          font-size: 3rem;
+          color: #000;
+
+          //   background: $secondary;
+          //   padding: 1rem;
+          //   border-radius: 50%;
+        }
+      }
+
+      h3 {
+        margin: 0.5rem 0;
+        color: #fff;
+        text-align: center;
+      }
+
+      p {
+        margin: 0.5rem 0;
+        color: #fff;
+        text-align: justify;
+      }
+    }
+  }
+
+  // @media (max-width: 768px) {
+  //   .ayuda {
+  //     flex-direction: column;
+  //     width: 100%;
+  //   }
+
+  //   div {
+  //     flex-basis: 100%;
+  //     margin-bottom: 20px;
+  //   }
+  // }
+
+  // @media (max-width: 480px) {
+  //   .ayuda {
+  //     flex-direction: column;
+  //     width: 100%;
+  //   }
+
+  //   div {
+  //     flex-basis: 100%;
+  //     margin-bottom: 20px;
+  //   }
+  // }
+}

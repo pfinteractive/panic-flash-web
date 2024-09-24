@@ -1,0 +1,58 @@
+#pie-pagina
+  .bubbles
+    - for (var i = 0; i < 128; i++) //Small numbers looks nice too
+      .bubble(style=`--size:${2+Math.random()*4}rem; --distance:${6+Math.random()*4}rem; --position:${-5+Math.random()*100}%; --time:${2+Math.random()*2}s; --delay:${-1*(2+Math.random()*2)}s;`)
+  footer.pie
+    .columnas.contenedor
+      .columna.animate__animated
+        h3.titulo-columna
+          i.fa.fa-shopping-bag
+          span Legal
+        nav.navegacion
+          ul.lista
+            li.elemento
+              a(href='#') Mentiones legales
+            li.elemento
+              a(href='#') Política de privacidad
+            li.elemento
+              a(href='#') Términos y condiciones
+            li.elemento
+              a(href='#') Envíos y devoluciones
+            li.elemento
+              a(href='#') Reglamento de concursos
+      .columna.animate__animated
+        h3.titulo-columna
+          i.fa.fa-share
+          span Nuestras redes
+        nav.navegacion
+          ul.lista
+            li.elemento
+              a(href='') 
+                i.fa.fa-youtube
+                span Youtube
+            li.elemento
+              a(href='') 
+                i.fa.fa-facebook
+                span Facebook
+            li.elemento
+              a(href='') 
+                i.fa.fa-instagram
+                span Instagram
+      .columna.animate__animated
+        h3.titulo-columna
+          i.fa.fa-send
+          span Contacto
+        nav.navegacion
+          ul.lista
+            li.elemento
+              a(href='mailto:contacto@pfinteractive.net.pe') contacto@pfinteractive.net.pe
+    .derechos.animate__animated
+      p
+        | Hecho por 
+        a(href='#' target='_blank') Guido LaEs
+
+  svg(style="position:fixed; top:100vh")
+    defs
+      filter#blob
+        feGaussianBlur(in="SourceGraphic" stdDeviation="10" result="blur")
+        feColorMatrix(in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob")

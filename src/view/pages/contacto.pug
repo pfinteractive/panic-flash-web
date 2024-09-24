@@ -1,0 +1,26 @@
+extends ../layouts/layout
+
+append config
+  -pageName = 'Post'
+
+block styles
+  
+block content  
+  .bg-primary
+  .contenedor
+    h1.form-title Contáctenos
+    form.contact-form(action='contacto.php' method='POST')
+      label.form-label(for='name') Nombre:
+      input#name.form-input(type='text' name='name' required='')
+      label.form-label(for='email') Correo Electr&oacute;nico:
+      input#email.form-input(type='email' name='email' required='')
+      label.form-label(for='message') Mensaje:
+      textarea#message.form-textarea(name='message' required='')
+      button.form-button(type='submit') Enviar
+
+  .map
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.2849453812355!2d-75.18944557767665!3d-12.028494392508133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910ebd7ad1bd3d5f%3A0x789627e07c4605b4!2sISTP%20Santiago%20Antunez%20de%20Mayolo!5e0!3m2!1ses-419!2spe!4v1721069155269!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+block scripts

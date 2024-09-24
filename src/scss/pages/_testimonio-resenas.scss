@@ -1,0 +1,42 @@
+#testimonio-resenas {
+  // background: $primary;
+  padding: 5rem 0;
+  // color: #fff;
+
+  .testimonio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 3rem;
+
+    div {
+      flex: 1 1 250px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin: 0 0 1em 0;
+        text-align: justify;
+        font-style: italic;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .testimonio {
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}

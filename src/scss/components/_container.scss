@@ -1,0 +1,30 @@
+/* Estilos base del contenedor */
+.contenedor {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 992px) {
+  .contenedor {
+    max-width: 960px;
+  }
+}
+
+/* Media query para pantallas extra grandes */
+@media (min-width: 1200px) {
+  .contenedor {
+    max-width: 1140px;
+  }
+}
+
+/* Media query para pantallas muy pequeñas, como teléfonos */
+@media (max-width: 576px) {
+  .contenedor {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

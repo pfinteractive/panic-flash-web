@@ -1,0 +1,25 @@
+.pdf-final {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  a {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #f00;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      background: #ffae00;
+    }
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}

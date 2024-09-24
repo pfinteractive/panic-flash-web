@@ -1,0 +1,217 @@
+extends ../layouts/layout
+
+append config
+  -pageName = 'Home'
+
+block styles
+
+block scripts 
+
+block content
+
+  #nuestro-servicio
+    .contenedor
+      .titulo.animate__animated
+        h2 Has estado creando tu servicio online, pero:
+      .servicios 
+        .cartas.animate__animated
+          img(src="img/gl-3.webp", alt="")
+          h3 El tiempo no alcanza
+          p Necesitas más horas en el día para avanzar como te gustaría y disfrutar con tu familia.
+        .cartas.animate__animated
+          img(src="img/gl-2.webp", alt="")
+          h3 Tu proyecto te consume
+          p Aunque te apasiona y quieres ser tu propio jefe, pareces tu propio esclavo.
+        .cartas.animate__animated
+          img(src="img/gl-1.webp", alt="")
+          h3 Aún no es rentable
+          p Llevas meses intentando hacerlo rentable y, a pesar de la inversión, aún no vives de ello.
+
+
+  #como-ayudar
+    .contenedor
+      .titulo.animate__animated
+        h2 ¿Cómo podemos ayudarte hoy?
+      .ayuda
+        .ayuda-cartas.animate__animated
+          .ful-icon
+            i.fa-brands.fa-aws
+          h3 Desarrollo Web a Medida
+          p Creamos sitios web personalizados que se adaptan a tus necesidades y las de tu negocio, asegurando una presencia digital única y efectiva.
+          //-a.boton(href="contacto.html") Contáctenos 
+            i.fa.fa-arrow-right
+        .ayuda-cartas.animate__animated
+          .ful-icon
+            i.fa.fa-html5
+          h3 Diseño Web
+          p Un sitio web bien diseñado otorga una presencia digital profesional, expande tu mercado y automatiza tus ventas, facilitando el crecimiento de tu empresa.
+          //-a.boton(href="contacto.html") Contáctenos 
+            i.fa.fa-arrow-right
+        .ayuda-cartas.animate__animated
+          .ful-icon
+            i.fa.fa-pen
+          h3 Diseño de Logos
+          p El logo define tu marca. Nos encargamos de sintetizar su esencia en un identificador visual impactante y memorable que represente fielmente tu negocio.
+          //-a.boton(href="contacto.html") Contáctenos 
+            i.fa.fa-arrow-right
+        .ayuda-cartas.animate__animated
+          .ful-icon
+            i.fa.fa-bolt
+          h3 Community Manager
+          p Gestionamos tus redes sociales para que puedas enfocarte en lo que realmente importa. Aumenta tu presencia en línea y conecta con tu audiencia de manera efectiva.
+          //-a.boton(href="contacto.html") Contáctenos 
+            i.fa.fa-arrow-right
+				
+  #sobre-nosotros
+    .contenedor
+      .titulo.animate__animated 
+        h2 Sobre Nosotros
+      .nosotros 
+        .descripcion.animate__animated
+          p En Panic Flash Interactive, transformamos tus ideas en experiencias digitales inolvidables. Somos una empresa dedicada al diseño, desarrollo web y gestión de comunidades, comprometida en brindar soluciones creativas y efectivas que se adaptan a las necesidades de cada cliente.
+        img.animate__animated(src="img/equipo.jpg", alt="")
+
+  #porque-elegirnos
+    .contenedor
+      .titulo.animate__animated 
+        h2 ¿Por qué Elegirnos?
+      .elirnos 
+        div.animate__animated 
+          img(src="img/experiencia.jpg", alt="")
+          h3 Experiencia
+          p Contamos con un equipo de profesionales con años de experiencia en el sector.
+        div.animate__animated 
+          img(src="img/personalizar.jpg", alt="")
+          h3 Personalización
+          p Cada proyecto es único y nos aseguramos de que refleje la esencia de tu marca.
+        div.animate__animated 
+          img(src="img/resultados.jpg", alt="")
+          h3 Resultados
+          p Nos enfocamos en ofrecer resultados medibles y satisfactorios.
+  
+  #mirar-video
+    .contenedor
+      .titulo.animate__animated 
+        h2 Mira Nuestro Video
+      button#openModalBtn.video-btn.animate__animated(data-video-url="https://www.youtube.com/embed/tXTKX1bDX3s") 
+        i.fas.fa-play
+    #videoModal.modal()
+      .modal-content
+        span#closeModalBtn.close 
+          i.fa.fa-times
+        .video-container
+          iframe#videoFrame(src='' frameborder='0' allowfullscreen='')
+
+  //-#unete-comunidad 
+    .contenedor
+      .titulo 
+        h2 Únete a Nuestra Comunidad
+      .comunidad
+        p En Panic Flash Interactive, no solo creamos sitios web, sino también relaciones duraderas con nuestros clientes. Estamos aquí para apoyarte en cada paso del camino, desde la conceptualización hasta la implementación y más allá.
+
+  #testimonio-resenas
+    .contenedor
+      .titulo.animate__animated
+        h2 Testimonios / Reseñas
+      .testimonio 
+        div.animate__animated
+          p "Gracias a Panic Flash Interactive, nuestro sitio web no solo se ve increíble, sino que también funciona a la perfección en todos los dispositivos. Su equipo fue profesional y atento a nuestras necesidades desde el primer día."
+          img(src="img/p-1.jpg", alt="")
+          b Carlos López, 
+          i Gerente General de TecnoPerú S.A.C.
+        div.animate__animated
+          p "Trabajar con Panic Flash Interactive ha sido una experiencia maravillosa. Nos ayudaron a crear una estrategia de marketing digital que ha incrementado significativamente nuestra presencia en línea y nuestras ventas."
+          img(src="img/p-2.jpg", alt="")
+          b Ana María Torres, 
+          i Directora de Marketing de ModaAndina
+        div.animate__animated
+          p "El equipo de Panic Flash Interactive comprendió perfectamente nuestra visión y la transformó en un sitio web interactivo y atractivo. Su enfoque innovador y atención al detalle son incomparables."
+          img(src="img/p-3.jpg", alt="")
+          b Luis Ramírez,  
+          i CEO de Inmobiliaria Los Andes
+
+  #propulsado-proyecto
+    .contenedor
+      .titulo.animate__animated
+        h2 Hemos propulsado +34 proyectos digitales
+      .empresas-logo.splide.animate__animated
+        .splide__track
+          .splide__list
+            .splide__slide
+              img(src="img/empresas/360-reload.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Almudena-Craus.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Alterfinanciero.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Audio-Fit.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Awaken-life-Journeys.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Aysen-Journeys.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Beach-Bike2.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Bitcoin-es-Libertad.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Bonsai-Medical-Center-2.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Cable-Red.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Cartagena-Top-Experiences.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/ConexCiencia.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Consulta-Endocrinologia.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Crecimiento-Sostenido.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Enfoque-y-Gestion.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Estallido-de-Ideas.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Gabiajando.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Glossy-Shearch.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Guianza-Libre.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Imprenta-Ideales2.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Islatak.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Jesus-Cordoba2.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Maravillosa-Menopausia.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Momento-en-Movimiento2.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Negocios-Cumbaya2.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Oyamoto.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Rous2.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Satori-Move.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Speak-to-Canada.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/The-Gathering-Factor.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Ursula-Nutriholistica.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Viajes-desde-la-Esencia.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Vibrando-en-Positivo.webp", alt="")
+            .splide__slide
+              img(src="img/empresas/Vive-de-tu-Arte.webp", alt="")
+ 
+  #contacto
+    .contenedor
+      .titulo.animate__animated 
+        h2 Contacto
+      form.formulario-contacto.animate__animated.mb-3(action="", method="post")
+        input(type="text" name="nombre" placeholder="Jhon Doe")
+        input(type="email" name="email" placeholder="example@gmail.com")
+        textarea(name="mensaje" placeholder="Mensaje ...")
+        button.boton.w-100(type="submit") Enviar

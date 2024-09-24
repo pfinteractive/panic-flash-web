@@ -1,0 +1,51 @@
+//- layout.pug
+include ../config/config
+block config
+doctype html
+html(lang="es")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    title #{siteName} | #{pageName}
+
+    // Favicon
+    link(rel='apple-touch-icon' sizes='180x180' href='img/favicon/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='img/favicon/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='img/favicon/favicon-16x16.png')
+    link(rel='manifest' href='img/favicon/site.webmanifest')
+
+    // Animate CSS
+    link(rel="stylesheet" href="css/animatecss.css")
+
+    // Css Bootstrap
+    link(rel="stylesheet" href="css/fontawesome.css")
+    link(rel="stylesheet" href="css/splidejs.css")
+    link(rel="stylesheet" href="css/app.css")
+
+    block styles
+  body
+    .wrapper
+      
+      // Navbar
+      include ../includes/navbar
+
+      - if(pageName == "Home")
+        // Header
+        include ../includes/header
+
+      // Content
+      .contenido-principal
+        block content
+
+      // Footer
+      include ../includes/footer
+
+    // Js Bootstrap
+    script(src='js/app.js')
+    script(src='js/splidejs.js')
+    script(src='js/animatecss.js')
+
+    block scripts 
+

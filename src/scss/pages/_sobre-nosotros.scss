@@ -1,0 +1,35 @@
+#sobre-nosotros {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  .nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .descripcion {
+      flex: 1 1 250px;
+      margin-right: 1rem;
+
+      p {
+        text-align: justify;
+      }
+    }
+
+    img {
+      flex: 1 1 250px;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nosotros {
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}

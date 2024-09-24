@@ -1,0 +1,15 @@
+#unete-comunidad {
+  padding: 5rem 0;
+
+  .comunidad {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .comunidad {
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}

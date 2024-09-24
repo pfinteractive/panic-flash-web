@@ -1,0 +1,40 @@
+#porque-elegirnos {
+  background: $primary;
+  padding: 5rem 0;
+
+  .titulo {
+    h2 {
+      color: #fff;
+    }
+  }
+
+  .elirnos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 auto;
+    text-align: center;
+
+    div {
+      flex: 1 1 250px;
+      color: #fff;
+
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .elirnos {
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}

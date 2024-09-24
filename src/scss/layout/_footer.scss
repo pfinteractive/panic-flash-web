@@ -1,0 +1,120 @@
+#pie-pagina {
+  position: relative;
+  min-height: 12rem;
+
+  .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: $primary;
+    filter: url("#blob");
+
+    .bubble {
+      position: absolute;
+      left: var(--position, 50%);
+      background: $primary;
+      border-radius: 100%;
+      animation:
+        bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+        bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+      transform: translate(-50%, 100%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .bubble {
+      left: calc(var(--position, 50%) * 0.8) !important;
+    }
+  }
+}
+
+.pie {
+  background-color: $primary;
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  padding: 1rem 0.5rem;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .columna {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px; // Para asegurar que las columnas se mantengan en un tamaño mínimo
+  }
+
+  .titulo-columna {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .navegacion .lista {
+    list-style: none;
+    padding: 0;
+  }
+
+  .elemento {
+    margin-bottom: 5px;
+  }
+
+  .derechos {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+// Estilos responsivos
+@media (max-width: 768px) {
+  .columnas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columna {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .titulo-columna {
+    font-size: 16px;
+  }
+}
+
+@keyframes bubble-size {
+  0%,
+  75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}

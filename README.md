@@ -57,7 +57,7 @@ body {
 - **Encabezado**: Incluye logo y menú de navegación.
 - **Hero Section**: Imagen destacada con un mensaje de bienvenida.
 - **Secciones de Contenido**: Información sobre los servicios, portafolio, y testimonios.
-- **Pie de Página**: Información de contacto y enlaces a redes sociales.
+- **Pie de Página**: Información de contacto y  enlaces a redes sociales.
 
 ## Imágenes y Multimedia
 

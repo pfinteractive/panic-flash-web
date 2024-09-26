@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelectorAll(".animate__animated"),t=new IntersectionObserver((function(e){e.forEach((function(e){e.isIntersecting&&(e.target.classList.add("animate__fadeIn"),t.unobserve(e.target))}))}));e.forEach((function(e){t.observe(e)}))})();
